@@ -1,0 +1,39 @@
+
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-sm-5">
+
+      </div>
+      <div class="col-sm-6">
+        <h1>Add Notes</h1>
+      </div>
+      <div class="container">
+        <form (ngSubmit)="create()">
+          <div class="form-group">
+
+          
+          <div class="row">
+        
+              <input type="text" class="form-control"  name="title" [(ngModel)]="note.title"  placeholder="Title">
+            </div>
+            <br> <br>
+            <div class="row">
+        
+                <input type="text" class="form-control" name="dec" [(ngModel)]="note.dec"  placeholder="Write Notes">
+              </div>
+
+              <br> <br>
+              <div class="row">
+          
+                  <!-- <button class="btn btn-success" (click)="register()" >Submit</button> -->
+                
+                  <input type="submit" value="Submit" class="btn btn-success"> 
+                </div>
+
+              </div>
+          </form>
+        </div>
+      
+    </div>
+  </div>
+
